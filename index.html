@@ -1,126 +1,403 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Web Layout Project</title>
+	<title>CUDA PROJECT</title>
+	<!--MAIN CSS PART-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+	<!--FONT AW4ESOME-->
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+	<!--FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Anton|Raleway|Timmana" rel="stylesheet"> 
+
 </head>
 <body>
-	<div class="main-div">
-		<!--header-->
-		<div class="header">
-		<div class="logo">
-			<img src="images/logo.png">
-		</div>
-		<div class="menu">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</div>
-		</div>
-		<!--header end-->
-		<!--slider start-->
-		<div class="slider">
-			<img src="images/slider.jpeg" alt="slider" style="height: 600px;">
-		</div>
-		<!--slider end-->
-		<!--content one-->
-		<div class="content-one">
-			<h1>content</h1>
-			<img src="images/content-one.jpeg">
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout...</p>
-			<button>Read More>></button>
-		</div>
-		<!--content end-->	
-		<!--Gallery-->
-		<div class="gal">
-			<h1>gallery</h1>
-			<div class="item">
-				<img src="images/concert.jpeg" alt="picture here">
-					<div class="item-text">
-						<h6>THIS IS A CONCERT</h6>
-						<hr>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-					</div>
-					<button>Read More>></button>
+	<!--MAIN BODY STRAT-->
+	<div class="container-fluid">
+		<!--header part start here-->
+		<header>
+			<div class="logo">
+				<img src="images/logo.png">
 			</div>
 
-			<div class="item">
-				<img src="images/im3.jpeg" alt="picture here">
-					<div class="item-text">
-						<h6>THIS IS A CONCERT</h6>
-						<hr>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-					</div>
-					<button>Read More>></button>
-			</div>
-
-			<div class="item">
-				<img src="images/im2.jpeg" alt="picture here">
-					<div class="item-text">
-						<h6>THIS IS A CONCERT</h6>
-						<hr>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-					</div>
-					<button>Read More>></button>
-			</div>
-		</div>
-		<!--Gallery end-->
-
-		<!--person start-->
-
-		<div class="team">
-			<h1>OUR TEAM</h1>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-			<div class="person-one">
-				<img src="images/per-one.jpeg">
-				<h4>John Snow</h4>
-				<P class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				</P>
-			</div>
-
-			<div class="person-one">
-				<img src="images/per-two.jpeg">
-				<h4>John Snow</h4>
-				<P class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				</P>
-			</div>
-
-			<div class="person-one">
-				<img src="images/per-three.jpeg">
-				<h4>John Snow</h4>
-				<P class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-				</P>
-			</div>
-		<!--person start-->
-
-		<!--footer start-->
-
-		<div class="footer">
-			<div class="right">
-				<p>
-					ALL RIGHTS RISERVED BY | &copy; <span><a href="#"><b>ABDULLAH ABU SYED REZA</b></a><span>
-				</p>
-			</div>
-
-			<div class="left">
+			<nav class="menu">
 				<ul>
-					<li><a href="#"></a><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
-					<li><a href="#"></a><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-					<li><a href="#"></a><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
-					<li><a href="#"></a><i class="fa fa-google-plus-square" aria-hidden="true"></i></li>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">WORK</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+
+			<h1>
+				Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.
+			</h1>
+			<button>
+				WORK WITH US
+			</button>
+		</header>
+		<!--header part end here-->
+		<!--2nd section-->
+		<section class="service">
+			<div class="sec">
+				<h1>
+					SERVICES WE PROVIDE
+				</h1>
+				<hr>
+				<P>
+					It is a long established fact that a reader will be distracted<br>by the readable content of a page when looking at its layout.
+				</P>
+				<div class="ser-img">
+				<img src="images/branding.png">
+				<h5>BRANDING</h5>
+				<p class="serp">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+				</div>
+
+				<div class="ser-img">
+				<img src="images/design.png">
+				<h5>DESIGN</h5>
+				<p class="serp">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+			</div>
+
+			<div class="ser-img">
+				<img src="images/devlopment.png">
+				<h5>DEVLOPMENT</h5>
+				<p class="serp">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+			</div>
+
+			<div class="ser-img">
+				<img src="images/rocket.png">
+				<h5>ROCKET SCIENCE</h5>
+				<p class="serp">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+			</div>
+
+
+			</div>
+
+
+		</section>
+
+		<!--person-->
+
+		<section class="person">
+			<div class="per">
+				<h1>
+					OUR TEAM MEMBERS
+				</h1>
+				<hr>
+				<P>
+					It is a long established fact that a reader will be distracted<br>by the readable content of a page when looking at its layout.
+				</P>
+				<div class="ser-img">
+				<img src="images/t1.png">
+				<h4>MRS. LISA</h4>
+				<p class="per-title" style="color:rgb(65, 131, 215);font-size:10px;">CEO</p>
+				<p class="serp">There are many variations of passages of Lorem Ipsum available.</p>
+				<div class="social">
+					<img src="images/fb_icon.png">
+					<img src="images/linkedin_icon.png">
+					<img src="images/twitter_icon.png">
+					<img src="images/mail_icon.png">
+
+				</div>
+				</div>
+
+				<div class="ser-img">
+				<img src="images/t2.png">
+				<h4>MRS. PUNK</h4>
+				<p class="per-title" style="color:rgb(65, 131, 215);font-size:10px;">CREATIVE DIRECTOR</p>
+				<p class="serp">There are many variations of passages of Lorem Ipsum available.</p>
+
+				<div class="social">
+					<img src="images/fb_icon.png">
+					<img src="images/linkedin_icon.png">
+					<img src="images/twitter_icon.png">
+					<img src="images/mail_icon.png">
+
+				</div>
+			</div>
+
+			<div class="ser-img">
+				<img src="images/t3.png">
+				<h4>MISS LARRY</h4>
+				<p class="per-title" style="color:rgb(65, 131, 215);font-size:10px;">LEAD DESIGNER</p>
+				<p class="serp">There are many variations of passages of Lorem Ipsum available.</p>
+				<div class="social">
+					<img src="images/fb_icon.png">
+					<img src="images/linkedin_icon.png">
+					<img src="images/twitter_icon.png">
+					<img src="images/mail_icon.png">
+
+				</div>
+			</div>
+
+			<div class="ser-img">
+				<img src="images/t1.png">
+				<h4>MRS. MIKE</h4>
+				<p class="per-title" style="color:rgb(65, 131, 215); 
+				font-size:10px;">SEO/DEVLOPER</p>
+				<p class="serp">There are many variations of passages of Lorem Ipsum available.</p>
+				<div class="social">
+					<img src="images/fb_icon.png">
+					<img src="images/linkedin_icon.png">
+					<img src="images/twitter_icon.png">
+					<img src="images/mail_icon.png">
+
+				</div>
+			</div>
+
+
+			</div>
+
+		</section>
+
+		<!--skills part-->
+		<section class="skills">
+			<div class="sk">
+				<h1>
+					OUR TEAM MEMBERS
+				</h1>
+				<hr>
+				<P>
+					It is a long established fact that a reader will be distracted<br>by the readable content of a page when looking at its layout.
+				</P>
+				<div class="ser-img">
+				<img src="images/web_blue_circle.png">
+				<P class="percent" style="font-size: 60px;font-family: 'Timmana', sans-serif;">90%</P>
+				<h4>WEB DESIGN</h4>
+				
+				</div>
+
+				<div class="ser-img">
+				<img src="images/ui_orange.png">
+				<P class="percent" style="font-size: 60px;font-family: 'Timmana', sans-serif;">85%</P>
+				<h4>UI/UX DESIGN</h4>
+				
+			</div>
+
+			<div class="ser-img">
+				<img src="images/graphics_green.png">
+				<P class="percent" style="font-size: 60px;font-family: 'Timmana', sans-serif;">70%</P>
+				<h4>GRAPHIC DESIGN</h4>
+				
+			</div>
+
+			<div class="ser-img">
+				<img src="images/html_pink.png">
+				<P class="percent" style="font-size: 60px;font-family: 'Timmana', sans-serif;">75%</P>
+				<h4>HTML/CSS</h4>
+				
+			</div>
+
+
+			</div>
+
+		</section>
+
+		<!--- portfolio part start here-->
+
+		<section class="portfolio">
+			<div class="port-part">
+				<h1>
+					OUR PORTFOLIO
+				</h1>
+				<hr>
+				<P>
+					It is a long established fact that a reader will be distracted<br>by the readable content of a page when looking at its layout.
+				</P>
+
+				<div class="port-option">
+					<ul>
+						<li><a href="#">ALL</a></li>
+						<li><a href="#">WEB</a></li>
+						<li><a href="#">APPS</a></li>
+						<li><a href="#">ICONS</a></li>
+					</ul>
+				</div>
+			<div class="computer" style="margin: 0 auto;">	
+				<div class="computer-one">
+					<div class="com-part">
+						<img src="images/portfolio_one.png">
+						<p>Lorem ispum is a dummy text</p>
+					</div>	
+				</div>
+
+				<div class="computer-two">
+					<div class="com-part">
+						<img src="images/portfolio_two.png">
+						<p>Lorem ispum is a dummy text</p>
+					</div>	
+				</div>
+				
+			</div>
+
+			<div class="second-row">	
+				
+				<div class="computer-second" style="margin: 0 auto;">	
+				<div class="computer-one">
+					<div class="com-part">
+						<img src="images/portfolio_three.png">
+						<p>Lorem ispum is a dummy text</p>
+					</div>	
+				</div>
+
+				<div class="computer-two">
+					<div class="com-part">
+						<img src="images/portfolio_four.png">
+						<p>Lorem ispum is a dummy text</p>
+					</div>	
+				</div>
+				
+			</div>
+
+				<button>
+					LOAD MORE PROJECTS
+				</button>
+
+			</div>	
+
+			</div>
+			
+		</section>
+
+		<!--- SAY ABOUT US-->
+
+		<section class="about-us">
+			<div class="about">
+				<h1>
+					WHAT PEOPLE SAY ABOUT US
+				</h1>
+				<hr>
+				<P>
+					OUR CLIENTS LOVE US!
+				</P>
+
+				<div class="main-about">
+					<div class="right">
+						<div class="a-one">
+							<img src="images/about.png">
+							<div class="a-para">
+								<p>
+									 The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
+								</p>
+								<h3>JOHN CENA</h3>
+							</div>
+
+						</div>
+
+						<div class="a-one">
+							<img src="images/about.png">
+							<div class="a-para">
+								<p>
+									The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
+								</p>
+								<h3>MIKE MILTON</h3>
+							</div>
+
+						</div>
+
+						<div class="a-one">
+							<img src="images/about.png">
+							<div class="a-para">
+								<p>
+									s a more-or-less normal distribution of letters, as opposed to using 'Content here.
+								</p>
+								<h3>OMAGA KITE</h3>
+							</div>
+
+						</div>
+					</div>	
+
+
+					<div class="left">
+						<div class="a-one">
+							<img src="images/about.png">
+							<div class="a-para">
+								<p>
+									 The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
+								</p>
+								<h3>JOHN CENA</h3>
+							</div>
+
+						</div>
+
+						<div class="a-one">
+							<img src="images/about.png">
+							<div class="a-para">
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+								</p>
+								<h3>MIKE MILTON</h3>
+							</div>
+
+						</div>
+
+						<div class="a-one">
+							<img src="images/about.png">
+							<div class="a-para">
+								<p>
+									 The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
+								</p>
+								<h3>OMAGA KITE</h3>
+							</div>
+
+						</div>
+					</div>	
+				</div>	
+
+			</div>
+		</section>
+
+		<!--contact-->
+
+		<section class="contact">
+			<div class="main-contact">
+				<h1>
+					GET IN TOUCH
+				</h1>
+				<hr>
+				<P>
+					STREET NO-00, SAGORIKA ROAD,CHITTAGONG,BANGLADESH
+				</P>
+
+				<form class="name-input">
+					<input class="name" type="text" name="name" placeholder="Your Name">
+				</form>
+				<form class="email-input">
+					<input class="email" type="email" name="name" placeholder="E-mail">
+				</form>
+
+				<form class="email-input">
+					<textarea rows="10" cols="50" placeholder="Your Message" class="message"></textarea>
+				</form>
+
+				<button class="last">
+					LOAD MORE PROJECTS
+				</button>
+
+			</div>
+		</section>
+
+		<!--footer-->
+
+		<footer>
+			
+			<div class="main-footer">
+				<ul>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Linkedin</a></li>
+					<li><a href="#">Google+</a></li>
+					<li><a href="#">Dribble</a></li>
+					<li><a href="#">Behance</a></li>
+					<li><a href="#">Github</a></li>
 				</ul>
 			</div>
-		</div>
 
-		<!--footer start-->
+		</footer>
 
-
-
+		
 	</div>
+	<!--MAIN BODY END HERE-->
 </body>
 </html>
